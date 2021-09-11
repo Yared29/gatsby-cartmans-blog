@@ -17,5 +17,5 @@ export const useConfigQuery = () => {
       }
     }
   `)
-  return data.markdownRemak.frontmatter
+  return data.markdownRemark.frontmatter
 }

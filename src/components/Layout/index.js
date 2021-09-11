@@ -1,7 +1,8 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
-
+// Components
+import Header from 'components/header'
 // Styles
 import { GlobalStyles, lightTheme, darkTheme } from 'styles/GlobalStyles'
 // Hooks
@@ -14,7 +15,8 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={darkTheme}>
       <GlobalStyles />
-      Layout component
+      <Header siteTitle={data.title} />
+
       {children}
     </ThemeProvider>
   )

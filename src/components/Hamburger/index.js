@@ -1,10 +1,16 @@
 import React from 'react'
+// Styles
+import { HamburgerIcon } from './Hamburger.styles'
 
-const Hamburger = ({ MenuOpern, setMenuOpen }) => {
+const Hamburger = ({ menuOpen, setMenuOpen }) => {
   return (
-    <div>
+    <HamburgerIcon
+      role="button"
+      menuOpen={menuOpen}
+      onClick={() => setMenuOpen(prev => !prev)}
+    >
       <div />
-    </div>
+    </HamburgerIcon>
   )
 }
 
