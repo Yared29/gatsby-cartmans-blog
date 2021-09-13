@@ -6,8 +6,9 @@ import Layout from 'components/Layout'
 import SEO from 'components/SEO'
 import HomeBanner from 'components/HomeBanner'
 import BlogPostCard from 'components/BlogPostCard'
+import PageNavigation from 'components/PageNavigation'
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.edges
   console.log('Posts : ', posts)
   return (
@@ -15,12 +16,16 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <HomeBanner />
       <main>
+        <PageNavigation
+          currentPage={pageContext.currentPage}
+          numPages={pageContext.numPages}
+        />
         {posts.map(({ node }, i) => {
-          const title = node.frontmatter.title
+          const title = node.frontmatter.title || node.fields.slug
           return (
             <BlogPostCard
-              key={i}
-              slug="/"
+              key={node.fields.slug}
+              slug={node.fields.slug}
               title={title}
               date={node.frontmatter.date}
               readingTime={node.fields.readingTime.text}
@@ -37,14 +42,17 @@ const IndexPage = ({ data }) => {
 export default IndexPage
 
 export const query = graphql`
-  query BlogListQuery {
+  query BlogListQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      filter: { frontmatter: { type: { eq: "post" } } }
+      limit: $limit
+      skip: $skip
+      filter: { frontmatter: { type: { eq: "post" }, published: { eq: true } } }
       sort: { fields: frontmatter___date, order: DESC }
     ) {
       edges {
         node {
           fields {
+            slug
             readingTime {
               text
             }
