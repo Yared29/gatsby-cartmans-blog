@@ -14,6 +14,7 @@ const HomeBanner = () => {
     bannerImageBtnText,
     bannerImageBtnLink,
   } = useBannerQuery()
+  console.log('banner image', bannerImage)
   return (
     <BannerWrapper>
       <BGImage title="Banner Image" fluid={bannerImage}>
