@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 // Icons
-import LeftIcon from 'images/arrow-left.svg'
-import RightIcon from 'images/arrow-right.svg'
+import LeftIcon from '../../images/arrow-left.svg'
+import RightIcon from '../../images/arrow-right.svg'
 //Styles
 import {
   PageNavigationWrapper,

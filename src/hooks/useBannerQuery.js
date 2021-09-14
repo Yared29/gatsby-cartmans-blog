@@ -1,4 +1,3 @@
-import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
 const useBannerQuery = () => {
@@ -8,7 +7,7 @@ const useBannerQuery = () => {
         frontmatter {
           bannerImage {
             childImageSharp {
-              gatsbyImageData(width: 2000, placeholder: BLURRED)
+              gatsbyImageData(width: 2000, height: 600, placeholder: BLURRED)
             }
           }
           bannerImageBtnLink

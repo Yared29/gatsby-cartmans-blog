@@ -2,11 +2,11 @@ import * as React from 'react'
 import { graphql } from 'gatsby'
 import { getImage } from 'gatsby-plugin-image'
 //Components
-import Layout from 'components/Layout'
-import SEO from 'components/SEO'
-import HomeBanner from 'components/HomeBanner'
-import BlogPostCard from 'components/BlogPostCard'
-import PageNavigation from 'components/PageNavigation'
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
+import HomeBanner from '../components/HomeBanner'
+import BlogPostCard from '../components/BlogPostCard'
+import PageNavigation from '../components/PageNavigation'
 
 const IndexPage = ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.edges

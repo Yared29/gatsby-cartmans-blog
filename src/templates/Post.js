@@ -2,9 +2,9 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { getImage } from 'gatsby-plugin-image'
 // Components
-import Layout from 'components/Layout'
-import Image from 'components/Image'
-import SEO from 'components/SEO'
+import Layout from '../components/Layout'
+import Image from '../components/Image'
+import SEO from '../components/SEO'
 
 const Post = ({ data }) => {
   const post = data.markdownRemark
@@ -33,7 +33,7 @@ export const query = graphql`
         date
         image {
           childImageSharp {
-            gatsbyImageData(width: 2000, placeholder: BLURRED)
+            gatsbyImageData(width: 2000, height: 600, placeholder: BLURRED)
           }
         }
       }

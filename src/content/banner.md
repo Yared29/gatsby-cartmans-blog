@@ -1,7 +1,7 @@
 ---
 type: 'banner'
-bannerImage: '../images/home-banner.jpg'
-bannerImageText: 'WELCOME TO MY SITE'
-bannerImageBtnText: 'Read More'
+bannerImage: '../images/home-banner.png'
+bannerImageText: 'RESPECT MY AUTHORITY'
+bannerImageBtnText: 'Contact Cartman'
 bannerImageBtnLink: '/contact'
 ---

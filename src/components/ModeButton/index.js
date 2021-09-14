@@ -1,7 +1,7 @@
 import React from 'react'
 // Images
-import DayIcon from 'images/daymode.svg'
-import NightIcon from 'images/nightmode.svg'
+import DayIcon from '../../images/daymode.svg'
+import NightIcon from '../../images/nightmode.svg'
 // Styles
 import { ImgButton } from './ModeButton.styles'
 

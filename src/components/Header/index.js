@@ -1,14 +1,14 @@
 import React, { useState, useContext } from 'react'
 import { Link } from 'gatsby'
 // Components
-import Menu from 'components/Menu'
-import Hamburger from 'components/Hamburger'
-import MobileMenu from 'components/MobileMenu'
-import ModeButton from 'components/ModeButton'
+import Menu from '../Menu'
+import Hamburger from '../Hamburger'
+import MobileMenu from '../MobileMenu'
+import ModeButton from '../ModeButton'
 // Hooks
-import { useConfigQuery } from 'hooks/useConfigQuery'
+import { useConfigQuery } from '../../hooks/useConfigQuery'
 // Context
-import { ModeContext } from 'context/ModeProvider'
+import { ModeContext } from '../../context/ModeProvider'
 // Styles
 import { Wrapper, Logo } from './Header.styles'
 const Header = ({ siteTitle = `` }) => {

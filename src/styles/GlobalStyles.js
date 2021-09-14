@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
-import NunitoRegular from 'fonts/Nunito-Regular.ttf'
-import NunitoBlack from 'fonts/Nunito-Black.ttf'
+import NunitoRegular from '../fonts/Nunito-Regular.ttf'
+import NunitoBlack from '../fonts/Nunito-Black.ttf'
 
 export const colors = {
   white: '#fff',

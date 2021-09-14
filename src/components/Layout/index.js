@@ -1,14 +1,13 @@
 import React, { useContext } from 'react'
 import { ThemeProvider } from 'styled-components'
-import { useStaticQuery, graphql } from 'gatsby'
 // Components
-import Header from 'components/header'
+import Header from '../Header'
 // Styles
-import { GlobalStyles, lightTheme, darkTheme } from 'styles/GlobalStyles'
+import { GlobalStyles, lightTheme, darkTheme } from '../../styles/GlobalStyles'
 // Hooks
-import { useMetaDataQuery } from 'hooks/useMetaDataQuery'
+import { useMetaDataQuery } from '../../hooks/useMetaDataQuery'
 // Context
-import { ModeContext } from 'context/ModeProvider'
+import { ModeContext } from '../../context/ModeProvider'
 
 const Layout = ({ children }) => {
   const [darkMode] = useContext(ModeContext)

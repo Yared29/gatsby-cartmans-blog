@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 // Component
-import BGImage from 'components/BGImage'
+import BGImage from '../BGImage'
 // Hooks
-import useBannerQuery from 'hooks/useBannerQuery'
+import useBannerQuery from '../../hooks/useBannerQuery'
 // Styles
 import { BannerWrapper, TextWrapper } from './HomeBanner.styles'
 
