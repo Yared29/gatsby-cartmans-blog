@@ -7,7 +7,7 @@ const useBannerQuery = () => {
         frontmatter {
           bannerImage {
             childImageSharp {
-              gatsbyImageData(width: 2000, height: 600, placeholder: BLURRED)
+              gatsbyImageData(width: 2000, height: 700, placeholder: BLURRED)
             }
           }
           bannerImageBtnLink

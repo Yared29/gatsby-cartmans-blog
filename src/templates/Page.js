@@ -33,7 +33,7 @@ export const query = graphql`
         date
         image {
           childImageSharp {
-            gatsbyImageData(width: 2000, height: 600, placeholder: BLURRED)
+            gatsbyImageData(width: 2000, height: 800, placeholder: BLURRED)
           }
         }
       }
